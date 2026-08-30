@@ -1,110 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CCS Conseil</title>
-  <meta name="description" content="Cabinet indépendant de conseil stratégique et d’AMO en immobilier patrimonial et monuments historiques." />
-  <style>
-    body { font-family: Georgia, 'Times New Roman', serif; margin: 0; color: #1f1f1f; line-height: 1.6; }
-    header { background: #1f2933; color: #fff; padding: 60px 40px; }
-    header h1 { font-size: 2.5rem; margin: 0; }
-    header p { font-size: 1.2rem; max-width: 700px; }
-    section { padding: 60px 40px; max-width: 1000px; margin: auto; }
-    h2 { font-size: 2rem; margin-bottom: 20px; }
-    h3 { font-size: 1.4rem; margin-top: 30px; }
-    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-    .card { border: 1px solid #ddd; padding: 30px; border-radius: 6px; }
-    footer { background: #f3f4f6; padding: 40px; text-align: center; font-size: 0.9rem; }
-    .cta { background: #111827; color: #fff; padding: 50px 40px; text-align: center; }
-    .cta a { color: #fff; text-decoration: none; font-weight: bold; border-bottom: 1px solid #fff; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CCS Conseil — Conseil stratégique & AMO patrimoniale</title>
+<meta name="description" content="Cabinet indépendant de conseil stratégique et d’assistance à maîtrise d’ouvrage spécialisé en immobilier patrimonial et monuments historiques.">
+<style>
+:root{--b:#14283d;--d:#0b1927;--g:#b79a62;--i:#f6f2ea;--t:#222;--m:#666}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--t);font-family:Georgia,"Times New Roman",serif;line-height:1.65;background:#fff}
+.wrap{width:min(1180px,88%);margin:auto}.top{background:var(--d);color:#dce4e9;font-family:Arial,sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase}
+.top .wrap{height:46px;display:flex;align-items:center;justify-content:space-between}.top a{color:#dce4e9;text-decoration:none}
+.hero{background:linear-gradient(120deg,var(--b),var(--d));color:#fff;border-bottom:3px solid var(--g)}
+.hero .wrap{min-height:520px;display:grid;grid-template-columns:160px minmax(0,1fr);gap:52px;align-items:center}
+.hero-logo{display:flex;align-items:center;justify-content:flex-start;width:160px;min-width:160px;overflow:hidden}
+.hero-logo img{display:block;width:140px!important;height:140px!important;max-width:140px!important;max-height:140px!important;object-fit:cover;border-radius:4px;box-shadow:0 10px 28px rgba(0,0,0,.15)}
+.k{font-family:Arial,sans-serif;text-transform:uppercase;letter-spacing:.2em;color:var(--g);font-size:12px;font-weight:700;margin-bottom:14px}
+h1,h2,h3{font-weight:400;line-height:1.08;margin-top:0}h1{font-size:clamp(46px,6vw,76px);margin-bottom:20px}h2{font-size:clamp(36px,4vw,55px);color:var(--b);margin-bottom:22px}
+.hero p{font-size:19px;color:#d8e0e5;max-width:780px}.promise{margin-top:28px;color:#fff!important;font-style:italic;font-size:22px!important}
+section{padding:90px 0}.intro{background:#fff}.intro p{max-width:850px;font-size:18px}.eyebrow{font-family:Arial,sans-serif;color:var(--g);letter-spacing:.18em;text-transform:uppercase;font-size:12px;font-weight:700;margin-bottom:18px}
+.services{background:var(--i)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:42px}.card{background:#fff;padding:34px 30px;border-top:2px solid var(--g);min-height:280px}.num{font-family:Arial,sans-serif;color:var(--g);font-size:12px;letter-spacing:.18em;margin-bottom:25px}.card h3{color:var(--b);font-size:25px}.card p{color:#555;margin-bottom:0}
+.audience{background:#fff}.audience-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}.audience ul{padding-left:20px;font-size:17px}.audience li{margin:12px 0}
+.position{background:var(--b);color:#fff}.position h2{color:#fff}.position .quote{font-size:clamp(27px,3vw,40px);line-height:1.3;max-width:900px;margin:30px 0;color:#fff}.position p{color:#d8e0e5;max-width:850px;font-size:17px}
+.cta{background:var(--d);color:#fff;text-align:center}.cta h2{color:#fff}.cta p{color:#d8e0e5;font-size:17px}.contact{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:34px}.contact a{font-family:Arial,sans-serif;font-size:13px;letter-spacing:.08em;color:#fff;text-decoration:none;border:1px solid var(--g);padding:14px 22px}
+footer{background:#07121d;color:#8493a0;text-align:center;padding:30px 20px;font-family:Arial,sans-serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+@media(max-width:800px){.hero .wrap{grid-template-columns:1fr;gap:22px;padding:55px 0}.hero-logo{width:120px;min-width:120px}.hero-logo img{width:110px!important;height:110px!important;max-width:110px!important;max-height:110px!important}.cards{grid-template-columns:1fr}.audience-grid{grid-template-columns:1fr;gap:25px}section{padding:65px 0}.top .wrap{height:auto;padding:14px 0;gap:10px;flex-wrap:wrap}}
+</style>
 </head>
 <body>
+<div class="top"><div class="wrap"><span>INDÉPENDANCE · EXPERTISE · PATRIMOINE</span><a href="#contact">NOUS CONTACTER</a></div></div>
 
-<header>
-  <div style="display:flex;align-items:center;gap:20px;">
-    <img src="logo.png" alt="CCS Conseil – Logo" style="height:130px;" />
-    <div>
-  <h1>CCS Conseil</h1>
-  <p>Cabinet indépendant de conseil stratégique et d’assistance à maîtrise d’ouvrage, spécialisé en immobilier patrimonial et monuments historiques.</p>
-    </div>
+<header class="hero">
+ <div class="wrap">
+  <div class="hero-logo"><img src="logo.png" alt="CCS Conseil"></div>
+  <div>
+   <div class="k">Conseil stratégique & assistance à maîtrise d’ouvrage</div>
+   <h1>CCS Conseil</h1>
+   <p>Cabinet indépendant spécialisé en immobilier patrimonial et monuments historiques, au service des propriétaires publics et privés confrontés à des décisions complexes.</p>
+   <p class="promise">Comprendre le patrimoine. Éclairer la décision. Sécuriser le projet.</p>
   </div>
+ </div>
 </header>
 
-<section>
-  <h2>Notre mission</h2>
-  <p>
-    CCS Conseil accompagne les propriétaires publics et privés confrontés à des décisions complexes sur des biens patrimoniaux : monuments historiques, bâtiments inscrits, ensembles bâtis à forte valeur culturelle et réglementaire.
-  </p>
-  <p>
-    Nous intervenons en amont et tout au long des projets pour sécuriser les choix techniques, réglementaires et financiers, avant qu’ils n’engagent le patrimoine pour plusieurs décennies.
-  </p>
-</section>
+<section class="intro"><div class="wrap">
+ <div class="eyebrow">Notre mission</div>
+ <h2>Décider avec une vision claire du patrimoine.</h2>
+ <p>CCS Conseil accompagne les propriétaires publics et privés confrontés à des décisions complexes sur des biens patrimoniaux : monuments historiques, bâtiments inscrits et ensembles bâtis à forte valeur culturelle et réglementaire.</p>
+ <p>Nous intervenons en amont et tout au long des projets pour sécuriser les choix techniques, réglementaires et financiers, avant qu’ils n’engagent le patrimoine pour plusieurs décennies.</p>
+</div></section>
 
-<section>
-  <h2>Nos domaines d’intervention</h2>
-  <div class="services">
-    <div class="card">
-      <h3>Diagnostic de faisabilité patrimoniale</h3>
-      <p>
-        Analyse stratégique préalable à toute décision majeure : état global du bien, contraintes réglementaires, risques, ordres de grandeur financiers et scénarios d’intervention.
-      </p>
-      <p><strong>Objectif :</strong> permettre une décision claire et éclairée (GO / NO GO / conditions).</p>
-    </div>
-    <div class="card">
-      <h3>Assistance à Maîtrise d’Ouvrage (AMO)</h3>
-      <p>
-        Accompagnement stratégique du maître d’ouvrage dans le montage, le phasage et le pilotage global de l’opération, en interface avec les architectes, entreprises et services de l’État.
-      </p>
-      <p><strong>Objectif :</strong> préserver la cohérence patrimoniale, les délais et les équilibres financiers.</p>
-    </div>
-    <div class="card">
-      <h3>Conseil stratégique ponctuel</h3>
-      <p>
-        Appui à la décision dans des situations sensibles : arbitrages techniques, réglementaires ou budgétaires, situations d’urgence ou de blocage.
-      </p>
-    </div>
-  </div>
-</section>
+<section class="services"><div class="wrap">
+ <div class="eyebrow">Nos domaines d’intervention</div>
+ <h2>Une expertise indépendante au service du maître d’ouvrage.</h2>
+ <div class="cards">
+  <article class="card"><div class="num">01 · DIAGNOSTIC</div><h3>Diagnostic de faisabilité patrimoniale</h3><p>Analyse stratégique préalable : état global du bien, contraintes réglementaires, risques, ordres de grandeur financiers et scénarios d’intervention. Objectif : permettre une décision claire et éclairée.</p></article>
+  <article class="card"><div class="num">02 · AMO</div><h3>Assistance à Maîtrise d’Ouvrage</h3><p>Accompagnement du maître d’ouvrage dans le montage, le phasage et le pilotage global de l’opération, en interface avec architectes, entreprises et services de l’État.</p></article>
+  <article class="card"><div class="num">03 · CONSEIL</div><h3>Conseil stratégique ponctuel</h3><p>Appui à la décision dans les situations sensibles : arbitrages techniques, réglementaires ou budgétaires, situations d’urgence ou de blocage.</p></article>
+ </div>
+</div></section>
 
-<section>
-  <h2>À qui nous adressons-nous ?</h2>
-  <ul>
-    <li>Propriétaires privés de biens classés ou inscrits</li>
-    <li>Propriétaires privés de biens de caractère</li>
-    <li>Collectivités territoriales et établissements publics</li>
-    <li>Fondations, congrégations, institutions culturelles</li>
-    <li>Investisseurs patrimoniaux long terme</li>
-  </ul>
-</section>
+<section class="audience"><div class="wrap audience-grid">
+ <div><div class="eyebrow">Nos interlocuteurs</div><h2>Pour ceux qui portent la responsabilité du patrimoine.</h2></div>
+ <div><ul><li>Propriétaires privés de biens classés ou inscrits</li><li>Propriétaires privés de biens de caractère</li><li>Collectivités territoriales et établissements publics</li><li>Fondations, congrégations et institutions culturelles</li><li>Investisseurs patrimoniaux long terme</li></ul></div>
+</div></section>
 
-<section>
-  <h2>Notre positionnement</h2>
-  <p>
-    CCS Conseil n’est ni maître d’œuvre, ni entreprise de travaux.
-  </p>
-  <p>
-    Nous sommes un <strong>tiers de confiance indépendant</strong>, dont la valeur repose sur l’expertise, le jugement et la responsabilité professionnelle engagée sur chaque mission.
-  </p>
-</section>
+<section class="position"><div class="wrap">
+ <div class="eyebrow">Notre positionnement</div>
+ <h2>Un tiers de confiance indépendant.</h2>
+ <div class="quote">« Préserver la cohérence patrimoniale tout en sécurisant la décision du maître d’ouvrage. »</div>
+ <p>CCS Conseil n’est ni maître d’œuvre, ni entreprise de travaux. Notre valeur repose sur l’indépendance du conseil, l’analyse, le jugement et la responsabilité professionnelle engagée sur chaque mission.</p>
+</div></section>
 
-<section class="cta">
-  <h2>Nous contacter</h2>
-  <p>
-    Pour une première prise de contact confidentielle ou un échange exploratoire sur votre projet patrimonial.
-  </p>
-  <p>
-    <strong>Clément CANDON-SCHIRM</strong><br />
-    CCS Conseil<br />
-    📞 07 62 59 83 00<br />
-    ✉️ <a href="mailto:agence.ccsconseil@gmail.com">agence.ccsconseil@gmail.com</a>
-  </p>
-</section>
+<section class="cta" id="contact"><div class="wrap">
+ <div class="eyebrow">Échange confidentiel</div>
+ <h2>Parlons de votre projet patrimonial.</h2>
+ <p>Pour une première prise de contact ou un échange exploratoire sur votre propriété, votre opération ou une problématique particulière.</p>
+ <p><strong>Clément CANDON-SCHIRM</strong><br>CCS Conseil</p>
+ <div class="contact"><a href="mailto:agence.ccsconseil@gmail.com">agence.ccsconseil@gmail.com</a><a href="tel:+33762598300">+33 7 62 59 83 00</a></div>
+</div></section>
 
-<footer>
-  © CCS Conseil – Cabinet indépendant de conseil stratégique et AMO patrimoniale
-</footer>
-
-</body>
-</html>
+<footer>© 2026 CCS CONSEIL — CABINET INDÉPENDANT DE CONSEIL STRATÉGIQUE & AMO PATRIMONIALE</footer>
+</body></html>
